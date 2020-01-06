@@ -183,7 +183,7 @@ nav>ul>li>a:hover {
 
 .section-1-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
     width: 90%;
     margin-bottom: 5rem;
 }
@@ -531,8 +531,8 @@ background: linear-gradient(90deg, rgba(254,254,254,1) 24%, rgba(249,249,249,1) 
 
 .blog-engineering {
     display: grid;
-    grid-template-areas: "image text-box";
-    grid-template-columns: 40% auto;
+    /* grid-template-areas: "image text-box"; */
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     height: 70vh;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
